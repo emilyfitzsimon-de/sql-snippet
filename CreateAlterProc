@@ -1,6 +1,11 @@
 --
 
 CREATE OR ALTER PROCEDURE MyAmazingCode
+/*
+Descripton: 
+Returns: 
+Updates:
+*/
 AS
 BEGIN
    SET NOCOUNT ON
@@ -11,6 +16,11 @@ END
 
 CREATE PROCEDURE MyAmazingCode
     @SomeParam int
+/*
+Descripton: 
+Returns: 
+Updates:
+*/
 AS
 BEGIN
    -- Do something here
@@ -20,6 +30,11 @@ END
 
 ALTER PROCEDURE MyAmazingCode
     @SomeParam int
+/*
+Descripton: 
+Returns: 
+Updates:
+*/
 AS
 BEGIN
    -- Do something here
@@ -32,6 +47,11 @@ IF EXISTS (SELECT OBJECT_ID('dbo.MyAmazingCode'))
 GO
 CREATE PROCEDURE dbo.MyAmazingCode
     @SomeParam int
+/*
+Descripton: 
+Returns: 
+Updates:
+*/
 AS
 BEGIN
    -- Do something here
@@ -44,6 +64,11 @@ IF  OBJECT_ID('dbo.MyAmazingCode') IS null
 GO
 ALTER PROCEDURE dbo.MyAmazingCode
     @SomeParam int
+/*
+Descripton: 
+Returns: 
+Updates:
+*/
 AS
 BEGIN
    -- Do something here
@@ -55,6 +80,11 @@ DROP PROCEDURE IF EXISTS dbo.MyAmazingCode
 GO
 CREATE PROCEDURE dbo.MyAmazingCode
     @SomeParam int
+/*
+Descripton: 
+Returns: 
+Updates:
+*/
 AS
 BEGIN
    -- Do something here
