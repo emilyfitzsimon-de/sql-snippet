@@ -1,0 +1,61 @@
+--
+
+CREATE OR ALTER PROCEDURE MyAmazingCode
+AS
+BEGIN
+   SET NOCOUNT ON
+   -- Do incredible coding here
+END
+
+--
+
+CREATE PROCEDURE MyAmazingCode
+    @SomeParam int
+AS
+BEGIN
+   -- Do something here
+END
+
+--
+
+ALTER PROCEDURE MyAmazingCode
+    @SomeParam int
+AS
+BEGIN
+   -- Do something here
+END
+
+--
+
+IF EXISTS (SELECT OBJECT_ID('dbo.MyAmazingCode'))
+  DROP PROCEDURE dbo.MyAmazingCode
+GO
+CREATE PROCEDURE dbo.MyAmazingCode
+    @SomeParam int
+AS
+BEGIN
+   -- Do something here
+END
+
+--
+
+IF  OBJECT_ID('dbo.MyAmazingCode') IS null
+  EXEC('CREATE PROCEDURE dbo.MyAmazingCode as select 1')
+GO
+ALTER PROCEDURE dbo.MyAmazingCode
+    @SomeParam int
+AS
+BEGIN
+   -- Do something here
+END
+
+--
+
+DROP PROCEDURE IF EXISTS dbo.MyAmazingCode
+GO
+CREATE PROCEDURE dbo.MyAmazingCode
+    @SomeParam int
+AS
+BEGIN
+   -- Do something here
+END
